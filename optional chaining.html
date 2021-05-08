@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="demo1"></p>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+    </div>
+</body>
+<script>
+    const user = {
+    dog: {
+      name: "Alex"
+    }
+  };
+   
+  console.log(user.cat?.name); //undefined
+  document.getElementById('demo1').innerHTML = user.cat?.name
+  console.log(user.dog?.name); //Alex
+  document.getElementById('demo').innerHTML = user.dog?.name
+  console.log(user.cat.name);
+ document.getElementById('demo2').innerHTML = user.cat.name
+</script>
+</html>
